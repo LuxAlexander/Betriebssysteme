@@ -55,10 +55,9 @@ dkms.conf
 *.swp
 *.tmp
 
-# Ignore everything by default
-*
-
 # Allow only C source, headers, and text files
 !*.c
 !*.h
 !*.txt
+
+# Ignore everything by default *
