@@ -1,18 +1,14 @@
 # Prerequisites
 *.d
 
-# Object files
+# Build-related files
 *.o
 *.ko
 *.obj
 *.elf
-
-# Linker output
 *.ilk
 *.map
 *.exp
-
-# Precompiled Headers
 *.gch
 *.pch
 
@@ -22,13 +18,11 @@
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
+# Shared objects & executables
 *.dll
 *.so
 *.so.*
 *.dylib
-
-# Executables
 *.exe
 *.out
 *.app
@@ -36,13 +30,18 @@
 *.x86_64
 *.hex
 
-# Debug files
+# Debugging & IDE metadata
 *.dSYM/
 *.su
 *.idb
 *.pdb
+.idea/
+*.iml
+cmake-build-debug/
+cmake-build-release/
+CMakeLists.txt.user
 
-# Kernel Module Compile Results
+# Kernel module compile results
 *.mod*
 *.cmd
 .tmp_versions/
@@ -50,3 +49,16 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Temporary or log files
+*.log
+*.swp
+*.tmp
+
+# Ignore everything by default
+*
+
+# Allow only C source, headers, and text files
+!*.c
+!*.h
+!*.txt
