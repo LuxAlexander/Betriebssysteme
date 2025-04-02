@@ -4,23 +4,34 @@
 
 Aufruf der Applikation:
 just [OPTION]... [DATEINAME]
+
 Wenn ein DATEINAME angegeben wird, dann wird die angegebene Datei gelesen. Wenn
 kein Dateiname oder alternativ als Platzhalter ein Zeichen “-“ angegeben wird, dann
 wird der Eingabestrom aus stdin gelesen.
+
 -s firstline Beginnt die Ausgabe mit der firstline gelesenen Zeile;
 default ist 1 für Ausgabe beginnt ab der 1. Zeile
+
 -e lastline Beendet die Ausgabe mit der lastline ausgegebenen Zeile;
 wenn keine Angabe, dann wird bis zur letzten Zeile ausgegeben
+
 -w pagewidth Gibt die Breite der Seite in Zeichen an; default ist 72
+
 -m margin Einrückung jeder Zeile um margin Leerzeichen; margin ist nicht
 Teil der Seitenbreite; default ist 0 für keine Einrückung
+
 -j Die Ausgabe erfolgt in Blocksatz; alle Zeilen sind gleich lang,
 Leerräume werden hierfür nötigenfalls mit Leerzeichen aufgefüllt
+
 -n Entfernt etwaige Newline (bei Windows CR+LF oder Linux LF) aus
 dem Texteingabestrom
+
 -p Interpretiert ein doppeltes NewLine als Absatzzeichen
+
 -h, --help Gibt eine erweiterte Hilfeinformation aus und terminiert
+
 --version Gibt eine Versionsinformation aus und terminiert
+
 Achtung: Etwaige Fehler dürfen grundsätzlich nur auf stderr ausgegeben werden!
 
 
