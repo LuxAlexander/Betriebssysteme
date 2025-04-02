@@ -97,6 +97,7 @@ int main(int argc, char* args[]) {
         //fprintf(stdout,"\nFound file %s\n",args[argc-1]);
         FILE *file=fopen(args[argc-1],"r");
         printFile(file,firstline,lastline,pagewidth,margin,nnewline,dopplenl,blocksatz);
+        fclose(file);
     }else {
         printFile(stdin,firstline,lastline,pagewidth,margin,nnewline,dopplenl,blocksatz);
     }
