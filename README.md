@@ -63,4 +63,5 @@ Das Programm bietet verschiedene Optionen zur Textmanipulation. Diese können in
 Andernfalls wird die standard Eingabe verwendet.
 
 Kommand: gcc [input].c -o [output].exe
+
          ./[output].exe [OPTIONS] [*FILE]
