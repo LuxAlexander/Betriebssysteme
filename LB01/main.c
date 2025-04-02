@@ -12,7 +12,7 @@
 
  * Aufruf: just [OPTION]... [DATEINAME]
  * Wenn ein DATEINAME angegeben wird, dann wird die angegebene Datei gelesen. Wenn
- * kein Dateiname oder alternativ als Platzhalter ein Zeichen “-“ angegeben wird, dann
+ * kein Dateiname oder alternativ als Platzhalter ein Zeichen “-“ angegeben wird, dann 
  * wird der Eingabestrom aus stdin gelesen.
 
  * -s firstline Beginnt die Ausgabe mit der firstline gelesenen Zeile;
@@ -143,7 +143,7 @@ void printFile(FILE* fptr, int start, int end, int maxwidth, int margin, bool no
     }
 
     //Go to the end of the file or till the specified end is reached
-    while ((ch = fgetc(fptr)) != EOF && (countlines <= end || end == EOF)) {
+    while ((ch = fgetc(fptr)) != EOF) {
         if (ch=='\n') {
             countlines++;
         }
@@ -186,7 +186,7 @@ void printFile(FILE* fptr, int start, int end, int maxwidth, int margin, bool no
 
         // Build words
         if (ch != ' ' && ch != '\n') {
-            if (countlines >= start) {
+            if (countlines >= start&&countlines <= end) {
                 word[wordlen++] = ch;//add character to word
                 word[wordlen] = '\0';  // Always terminate string
             }
@@ -227,7 +227,7 @@ void printFile(FILE* fptr, int start, int end, int maxwidth, int margin, bool no
     }
 
     // Refactor
-    if (wordlen > 0 && countlines >= start && (countlines < end || countlines == EOF)) {
+    if (wordlen > 0) {
         printf("%d",end);
             if (countlines >= start) {
                 if (blocksatz) {
@@ -252,7 +252,7 @@ void printFile(FILE* fptr, int start, int end, int maxwidth, int margin, bool no
     }
 
     // Redundant code that should be simplified at the next refactoring
-    if (countwidth > 0&&(countlines<end||end==EOF)) {
+    if (countwidth > 0) {
         if (blocksatz) {
             if (maxwidth <=10) {
                 justifysmall(line, countwidth, maxwidth, margin);
