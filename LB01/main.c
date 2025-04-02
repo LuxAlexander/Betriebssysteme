@@ -186,7 +186,7 @@ void printFile(FILE* fptr, int start, int end, int maxwidth, int margin, bool no
 
         // Build words
         if (ch != ' ' && ch != '\n') {
-            if (countlines >= start&&countlines <= end) {
+            if (countlines >= start&& (countlines <= end|| end == EOF)) {
                 word[wordlen++] = ch;//add character to word
                 word[wordlen] = '\0';  // Always terminate string
             }
