@@ -61,3 +61,6 @@ Optionen & Argumente:
 
 Das Programm bietet verschiedene Optionen zur Textmanipulation. Diese können in beliebiger Reihenfolge angegeben werden. Falls eine Datei verarbeitet werden soll, sollte sie am Ende der Befehlszeile stehen.
 Andernfalls wird die standard Eingabe verwendet.
+
+Kommand: gcc [input].c -o [output].exe
+         ./[output].exe [OPTIONS] [*FILE]
