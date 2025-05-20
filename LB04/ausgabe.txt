@@ -1,0 +1,54 @@
+Parent pid is 135375
+ID is 136167
+A: 10 0x7ffe32939944
+Parent pid is 135375
+ID is 136167
+A: 10 0x7ffe32939944
+Array: 0x56079f5924a0
+Ich bin der Elternprozess (PID: 136167)
+A: 14
+Parent pid is 135375
+ID is 136167
+A: 10 0x7ffe32939944
+Parent pid is 136167
+ID is 136168
+A: 10 0x7ffe32939944
+Array: 0x56079f5924a0
+Ich bin der Elternprozess (PID: 136168)
+A: 14
+Parent pid is 135375
+ID is 136167
+A: 10 0x7ffe32939944
+Parent pid is 135375
+ID is 136167
+A: 10 0x7ffe32939944
+Array: 0x56079f5924a0
+Ich bin der Kindprozess (PID: 136169)
+A: 20
+Parent pid is 135375
+ID is 136167
+A: 10 0x7ffe32939944
+Parent pid is 136167
+ID is 136168
+A: 10 0x7ffe32939944
+Array: 0x56079f5924a0
+Ich bin der Kindprozess (PID: 136170)
+A: 20
+Parent pid is 135375
+ID is 136167
+A: 10 0x7ffe32939944
+Parent pid is 135375
+ID is 136167
+A: 10 0x7ffe32939944
+Array: 0x56079f5924a0
+Ich bin der Kindprozess (PID: 136169)
+A: 20
+Parent pid is 135375
+ID is 136167
+A: 10 0x7ffe32939944
+Parent pid is 136167
+ID is 136168
+A: 10 0x7ffe32939944
+Array: 0x56079f5924a0
+Ich bin der Kindprozess (PID: 136170)
+A: 20
